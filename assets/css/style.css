@@ -28,7 +28,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #00000000;
-  min-height: 500px;
+  min-height: 700px;
 }
 
 #digimon-logo {
@@ -68,12 +68,13 @@ body {
   max-width: 220px;
   /* height: 29rem; */
   /* margin: 1rem; */
-  color: #ff870b;
+  color: #ffb54d;
+  /* color: #ff870b; */
   border-radius: 20px;
   border-color: 1px solid var(--gray);
   background: #0015ff00;
   overflow: hidden;
-  transition: color 0.7s, box-shadow 0.7s;
+  transition: color 0.5s, box-shadow 0.6s;
 }
 
 .digimon-img {
@@ -82,8 +83,12 @@ body {
   /* width: 25%; */
   max-width: 250px;
   /* max-height: 11rem; */
-  padding: 1rem;
+  margin: 1rem;
+  /* padding: 1rem; */
   background: #0015ff00;
+  /* border: 1px solid red; */
+  border-radius: 8px;
+  overflow: hidden;
   /* margin: ; */
 }
 
@@ -92,15 +97,16 @@ span {
   background: var(--glass-background);
 }
 
-h3,
+/* h3,
 p,
-b {
-  /* background: #0015ff00; */
-  background: var(--glass-background);
-}
+b { */
+/* background: #0015ff00; */
+/* background: var(--glass-background);
+} */
 .footer-card,
-h3,
+h4,
 p,
+b,
 span {
   /* background: #0015ff00; */
   background: var(--glass-background);
@@ -109,8 +115,11 @@ span {
 .card:hover {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 15px white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(255, 255, 255, 0.479);
+  box-shadow: 0px 0px 30px 4px rgb(255, 255, 255);
+  /* box-shadow: 0 0px 8px 0 rgb(255, 255, 255); */
+  /* 0 6px 20px 0 rgba(255, 255, 255, 0.479); */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.479); */
 }
 
 /* .flagInfo {
@@ -149,7 +158,29 @@ span {
   background: rgba(0, 0, 255, 0);
 }
 
+i {
+  padding: 0 1rem;
+}
+
 /**** /FOOTER ****/
+
+.digimon-info {
+  height: 40vh;
+  border-radius: 160px;
+  color: white;
+  background: var(--glass-background);
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 0.3rem; */
+  min-height: 300px;
+  max-width: 550px;
+}
+
+/* footer of details.html*/
+.details {
+  position: absolute;
+  bottom: 0;
+}
 
 @media screen and (max-width: 516px) {
   .card {
