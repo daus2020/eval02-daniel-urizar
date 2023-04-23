@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let hasData = localStorage.getItem("allData");
   hasData ? digimonCards(JSON.parse(hasData)) : fetchData();
-  // userDigimonLetters(JSON.parse(hasData));
+  userDigimonLetters(JSON.parse(hasData));
 });
 
 const fetchData = async () => {

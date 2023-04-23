@@ -23,46 +23,47 @@
     <title>Digimon</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-xl navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="assets/img/digimon-logo.svg"
-            alt="Digimon logo"
-            id="digimon-logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo2"
-          aria-controls="navbarTogglerDemo2"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse show" id="navbarTogglerDemo2">
-          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Random</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
+    <nav>
+      <img
+        src="assets/img/digimon-logo.svg"
+        alt="Digimon logo"
+        id="digimon-logo" />
     </nav>
+    <header class="container">
+      <div class="filters">
+        <form class="digimon-search-box" id="digimon">
+          <input type="text" placeholder="Buscar  Digimon" id="input-digimon" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <select name="levels" id="levels" onchange="userLevel()">
+          <option
+            class="opt-level text-light"
+            id="placeholderLevel"
+            value="all"
+            selected
+            disabled
+            hidden>
+            Seleccionar nivel
+          </option>
+          <option class="opt-level" value="all" id="opt-all" default>
+            Todos
+          </option>
+          <!-- <option class="opt-level" value="Americas" id="opt-americas">
+            América
+          </option>
+          <option class="opt-level" value="Africa" id="opt-africa">
+            África
+          </option>
+          <option class="opt-level" value="Asia" id="opt-asia">Asia</option>
+          <option class="opt-level" value="Oceania" id="opt-oceania">
+            Oceanía
+          </option>
+          <option class="opt-level" value="Europe" id="opt-europe">
+            Europa
+          </option> -->
+        </select>
+      </div>
+    </header>
     <img
       src="assets/img/digimon-backgground.png"
       alt="digimon family watermark"
@@ -106,5 +107,7 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/inputsDigimon.js"></script>
+    <script src="assets/js/options-select.js"></script>
   </body>
 </html>
