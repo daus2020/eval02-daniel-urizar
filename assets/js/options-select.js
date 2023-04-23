@@ -11,4 +11,15 @@ const userLevel = () => {
   // call data from localStorage (recorded when fetch api once)
   let allData = JSON.parse(localStorage.getItem("allData"));
   console.log(allData);
+
+  const filterLevel = allData.filter((item) => {
+    if (selectedLevel === "all") {
+      return allData;
+    }
+    if (item.level === selectedLevel) {
+      return item;
+    }
+  });
+
+  digimonCards(filterLevel);
 };
