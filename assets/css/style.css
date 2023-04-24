@@ -56,12 +56,24 @@ nav {
   background: #0015ff00;
 }
 
-#input-digimon {
+.filters {
+  display: flex;
+  justify-content: space-around;
+}
+
+.digimon-search-box {
+  background: #0015ff00;
+}
+
+#input-digimon,
+#selectLevels {
   color: #ffb54d;
   padding: 10px 35px 10px 15px;
-  border: none;
+  border: 1px solid #ffb54d;
   border-radius: 100px;
   outline: none;
+  margin: 5px 0;
+  width: 180px;
 }
 
 /* bootstrap icon */
@@ -79,7 +91,7 @@ nav {
 }
 
 #selectLevels {
-  color: #ffb54d;
+  /* color: #ffb54d; */
   background-color: #0000007d;
   /* background-color: #000000a0; */
 }
