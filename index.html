@@ -33,9 +33,9 @@
       <div class="filters">
         <form class="digimon-search-box" id="digimon">
           <input type="text" placeholder="Buscar  Digimon" id="input-digimon" />
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="bi bi-search"></i>
         </form>
-        <select name="levels" id="levels" onchange="userLevel()">
+        <select name="levels" id="selectLevels" onchange="userLevel()">
           <option
             class="opt-level"
             id="placeholderLevel"
@@ -43,28 +43,10 @@
             selected
             disabled
             hidden>
-            Seleccionar nivel
+            Seleccione nivel
           </option>
           <option class="opt-level" value="all" id="opt-all" default>
             Todos
-          </option>
-          <option class="opt-level" value="Armor" id="opt-armor">Armor</option>
-          <option class="opt-level" value="Champion" id="opt-champion">
-            Champion
-          </option>
-          <option class="opt-level" value="Fresh" id="opt-fresh">Fresh</option>
-          <option class="opt-level" value="In Training" id="opt-intraining">
-            In Training
-          </option>
-          <option class="opt-level" value="Mega" id="opt-mega">Mega</option>
-          <option class="opt-level" value="Rookie" id="opt-rookie">
-            Rookie
-          </option>
-          <option class="opt-level" value="Training" id="opt-training">
-            Training
-          </option>
-          <option class="opt-level" value="Ultimate" id="opt-ultimate">
-            Ultimate
           </option>
         </select>
       </div>
@@ -74,18 +56,9 @@
       alt="digimon family watermark"
       id="watermark" />
 
-    <!-- <img
-        src="assets/img/digimon-logo.svg"
-        alt="Digimon logo"
-        id="digimon-logo" /> -->
-    <main class="container gallery" id="digimons"></main>
-    <!-- <footer>
-      &copy;2023
-      <span>
-        <img src="assets/img/du-min-circle.png" alt="du" id="du-logo"
-      /></span>
-      daniel-urizar
-    </footer> -->
+    <main class="container gallery" id="digimons">
+      <!-- digimon cards renders here -->
+    </main>
 
     <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
       <div class="container text-center">
@@ -103,6 +76,7 @@
         </small>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

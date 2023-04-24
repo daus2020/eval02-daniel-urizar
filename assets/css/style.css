@@ -28,7 +28,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #00000000;
-  min-height: 700px;
+  height: 100%;
+  /* min-height: 700px; */
+}
+
+nav {
+  padding: 10px;
 }
 
 #digimon-logo {
@@ -48,14 +53,43 @@ body {
   background: #0015ff00;
 }
 
+#input-digimon {
+  color: #ffb54d;
+  padding: 10px 35px 10px 15px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+}
+
+/* bootstrap icon */
+.bi-search {
+  color: white;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -50px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+#selectLevels {
+  color: #ffb54d;
+  background-color: #0000007d;
+  /* background-color: #000000a0; */
+}
+
 .gallery {
   margin: auto;
   width: 100%;
   display: grid;
   gap: 1.5rem;
   justify-content: center;
-  /* grid-template-columns: repeat(6, minmax(0, 1fr)); */
   grid-template-columns: repeat(auto-fill, minmax(220px, 0.8fr));
+  min-height: 100%;
+  padding: 100px 0;
 }
 
 .card {
@@ -66,10 +100,7 @@ body {
   justify-content: space-between;
   min-width: 100px;
   max-width: 220px;
-  /* height: 29rem; */
-  /* margin: 1rem; */
   color: #ffb54d;
-  /* color: #ff870b; */
   border-radius: 20px;
   border-color: 1px solid var(--gray);
   background: #0015ff00;
@@ -78,18 +109,11 @@ body {
 }
 
 .digimon-img {
-  /* width: 100%; */
-  /* width: 100%; */
-  /* width: 25%; */
   max-width: 250px;
-  /* max-height: 11rem; */
   margin: 1rem;
-  /* padding: 1rem; */
   background: #0015ff00;
-  /* border: 1px solid red; */
   border-radius: 8px;
   overflow: hidden;
-  /* margin: ; */
 }
 
 span {
@@ -97,12 +121,6 @@ span {
   background: var(--glass-background);
 }
 
-/* h3,
-p,
-b { */
-/* background: #0015ff00; */
-/* background: var(--glass-background);
-} */
 .footer-card,
 h4,
 p,
@@ -116,16 +134,7 @@ span {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 15px white;
   box-shadow: 0px 0px 30px 4px rgb(255, 255, 255);
-  /* box-shadow: 0 0px 8px 0 rgb(255, 255, 255); */
-  /* 0 6px 20px 0 rgba(255, 255, 255, 0.479); */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(255, 255, 255, 0.479); */
 }
-
-/* .flagInfo {
-  height: 100%;
-  min-width: 200px;
-} */
 
 /**** FOOTER ****/
 footer {
@@ -141,6 +150,7 @@ footer {
   color: var(--gray);
   transition: 0.6s;
   margin-top: 5px;
+  height: 50px;
 }
 
 footer:hover {
